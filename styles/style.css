@@ -1,0 +1,54 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    /* height: 100vh; */
+}
+
+header {
+    background: black;
+    display: flex;
+    align-items: center;
+    width: 100vw;
+    height: 6vh;
+}
+
+#hamburger {
+    width: 20%;
+    margin-left: 4rem;
+}
+
+.hamburger-icon {
+    width: 40px;
+    height: 6px;
+    background-color: white;
+    margin: 9px 0;
+}
+
+h1 {
+    color: white;
+}
+
+#sign-in-container {
+    width: 55%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+#sign-in-btn {
+    background: #bf612e;
+    border: none;
+    color: white;
+    height: 85%;
+    width: 20%;
+    border-radius: 25px;
+}
