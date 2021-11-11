@@ -38,10 +38,6 @@ function loopArray(books) {
 const container = document.querySelector('.container');
 const addBookBtn = document.querySelector('[data-add-book]');
 
-addBookBtn.addEventListener('click', (e) => {
-    
-});
-
 myBook = new Book('It', 'Stephen King', 1138, 'Yes');
 hisBook = new Book('Gone With The Wind', 'Margaret Mitchell', 1024, 'No');
 
