@@ -2,12 +2,14 @@
 
 * {
     box-sizing: border-box;
+    text-align: center;
 }
 
 body {
     font-family: 'Poppins', sans-serif;
     margin: 0;
     padding: 0;
+    background: #37154a;
 }
 
 .container {
@@ -17,12 +19,19 @@ body {
     width: 100vw;
     height: 100vh;
 }
+
+.hide {
+    display: none;
+}
+
+.show {
+    display: flex;
+}
 /* --------------------------------------------------------------------- */
 
 /* ---------------------- HEADER ----------------------------- */
 header {
     background: black;
-    display: flex;
     align-items: center;
     width: 100vw;
     height: 6%;
@@ -73,12 +82,63 @@ main {
     display: flex;
     flex-direction: column;
     align-items: center;
-    background: #37154a;
+    height: 100vh;
+}
+
+form {
+    flex-direction: column;
+    width: 35vw;
+    height: 60%vh;
+    justify-content: center;
+    border: 3px solid black;
+    margin-top: 12rem;;
+    border-radius: 10px;
+}
+
+.form-div {
+    margin: 1rem 0;
+}
+
+form h2 {
+    color: white;
+}
+
+form span {
+    color: white;
+}
+
+form input {
+    height: 2rem;
+}
+
+.add-remove-btns {
+    color: white;
+    width: 5rem;
+    height: 2.5rem;
+    border: none;
+    font-size: 1.2rem;
+    transition-duration: 1s;
+}
+
+#cancel-btn {
+    background: #8f0000;
+    margin-right: 3rem;
+}
+
+#cancel-btn:hover {
+    background: #ba3636;
+}
+
+#add-btn {
+    background: #007a06;
+}
+
+#add-btn:hover {
+    background: #23b82a;
 }
 
 #add-book-container {
     height: 20vh;
-    display: flex;
     justify-content: center;
     align-items: center;
 }
@@ -103,7 +163,6 @@ main {
 
 #card-container {
     width: 100%;
-    display: flex;
     justify-content: center;
     flex-wrap: wrap;
 }
@@ -155,10 +214,12 @@ main {
 @media only screen and (min-width: 960px) {
     header {
         height: 20%;
-        justify-content:space-around;
+        justify-content: space-around;
     }
 
     #main-text {
+        display: flex;
+        justify-content: start;
         width: 50%;
         margin-left: 3rem;
     }
@@ -203,6 +264,10 @@ main {
 @media only screen and (min-width: 1250px) {
     #sign-in-btn {
         width: 20%;
+    }
+
+    .card {
+        width: 15%;
     }
 }
 

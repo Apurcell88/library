@@ -12,7 +12,7 @@
 </head>
 <body>
     <div class="container">
-        <header>
+        <header class="show">
             <div id="hamburger">
                 <div class='hamburger-icon'></div>
                 <div class='hamburger-icon'></div>
@@ -26,11 +26,33 @@
             </div>
         </header>
         <main>
-            <div id="add-book-container">
-                <button id="add-book-btn">Add Book</button>
+            <div data-form-container class="form-container hide">
+                <form>
+                    <h2>Add New Book</h2>
+                    <div class="form-div">
+                        <input required data-title id="title" type="text" placeholder="Title">
+                    </div>
+                    <div class="form-div">
+                        <input required data-author id="author" type="text" placeholder="Author">
+                    </div>
+                    <div class="form-div">
+                        <input required data-total-pages type="text" id="total-pages" placeholder="Total pages">
+                    </div>
+                    <div class="form-div">
+                        <span>Have you read it? <input id="checkbox" data-read type="checkbox"></span>
+                    </div>
+                    <div class="form-div">
+                        <button data-cancel id="cancel-btn" class="add-remove-btns">Cancel</button>
+                        <button data-add id="add-btn" class="add-remove-btns">Add</button>
+                    </div>
+                </form>
             </div>
-            <div id="card-container">
-                <div class="card">
+
+            <div data-add-container id="add-book-container" class="show">
+                <button data-add-book-btn id="add-book-btn">Add Book</button>
+            </div>
+            <div data-card-container id="card-container" class="show">
+                <!-- <div class="card">
                     <div class="title">
                         <h2>It</h2>
                     </div>
@@ -97,24 +119,7 @@
                     <div class="remove">
                         <button class="remove-btn">Remove</button>
                     </div>
-                </div>
-                <div class="card">
-                    <div class="title">
-                        <h2>Rainbow Six</h2>
-                    </div>
-                    <div class="author">
-                        <h3>Tom Clancy</h3>
-                    </div>
-                    <div class="pages">
-                        <p>740 pages</p>
-                    </div>
-                    <div class="read-or-not">
-                        <button class="read-or-not-btn">Not read</button>
-                    </div>
-                    <div class="remove">
-                        <button class="remove-btn">Remove</button>
-                    </div>
-                </div>
+                </div> -->
             </div>
         </main>
     </div>
